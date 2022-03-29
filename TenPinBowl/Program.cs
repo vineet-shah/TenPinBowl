@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TenPinBowl
 {
@@ -16,9 +13,8 @@ namespace TenPinBowl
             Console.WriteLine("");
 
             // int[] scoreSystem = new int[] { 10, 9, 1, 5, 5, 7, 2, 10, 10, 10, 9, 0, 8, 2, 9, 1, 10 };
-            IList<int> scoreSystem = new List<int>();
             GameTenPin gtp = new GameTenPin();
-            int counter = 0, LastframeValue = 0, frameCount = 1; 
+            int counter = 0, LastframeValue = 0; 
             while(counter < 21)
             {
                 if (LastframeValue < 10 && counter == 20)
